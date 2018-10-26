@@ -78,7 +78,52 @@
 	R\approx f\Psi,
 \end{equation}
 где $f$-- фокусное расстояние объектива.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%БИТАЯ ССЫЛКА%%%%%%%%%%%%%%%
-\begin{description}
-	\item[] 
-\end{description}
+
+
+Для разностей радиусов \ref{fig:9} из соотношения \ref{eq:29} получим 
+\begin{gather}
+	\label{eq:30}
+	\Delta R_m \approx f \delta \xi_m и \Delta R_{\lambda} \approx f \delta \xi_{\lambda} 
+\end{gather}
+%рис 9
+%рис 10
+Величину  разности углов $\delta \xi_m$ и $\delta \xi_{\lambda}$ найдем из \ref{eq:24}, которое с учетом малости $\xi$ примет вид
+\begin{gather}
+	\label{eq:31}
+	1-\frac{\xi^m}{2}=\frac{m\lambda}{2h}
+\end{gather}
+
+Откуда получаем значения 
+\begin{gather}
+	\label{eq:32}
+	\delta \xi_m=\frac{m\delta \lambda}{2h\xi_m} и \delta \xi_{\lambda}=\frac{\lambda}{2h\xi_{\lambda}}
+\end{gather}
+
+Усредняя результаты измерений,получим
+\begin{gather}
+	\label{eq:33}
+ 	\langle \Delta R_m \rangle  = f \langle\delta \xi_m\rangle =f\frac{m\delta \lambda}{2h}  \langle\frac{1}{\xi_m} \rangle
+\end{gather}
+
+Аналогично для
+\begin{gather}
+	\label{eq:34}
+	\langle\Delta R_{\lambda}\rangle  = f \langle\delta \xi_{\lambda}\rangle =f\frac{\lambda}{2h}  \frac{1}{\xi_{\lambda}} 
+\end{gather}
+
+Из соотношений \ref{eq:33} и \ref{eq:34} с учетом равенства $ \langle\frac{1}{\xi_m}\rangle = \langle\frac{1}{\xi_{\lambda}} \rangle$, 
+которое следует из того, что углы $\xi_m$ и $\xi_{\lambda}$ принимают один и тот же ряд значений, получим формулу для расчета 
+$\delta \lambda$: 
+
+\begin{equation}
+	\frac{\langle \Delta R_m \rangle}{\langle \Delta R_{\lambda}\rangle}=\frac{m \delta \lambda}{\lambda},
+\end{equation}
+
+полагая $m=\frac{2h}{\lambda}$, получим
+
+\begin{equation}
+	\label{eq:35}
+	\delta \lambda = \frac{\lambda^2}{2h} \frac{\langle \Delta R_m \rangle}{\langle \Delta R_{\lambda}\rangle}
+\end{equation}
+
+Регистрировать данные измерений и производить их обработку удобно, используя таблицу \ref{tab:3}, где $ \langle \Delta \rangle R_m  = \frac{1}{4} \sum^4_{i=1} \Delta R_mi$, $ \langle \Delta  R_{\lambda} \rangle = \frac{1}{3} \sum^3_{i=1} \Delta R_{\lambda i}$
